@@ -51,8 +51,6 @@ python3.pkgs.buildPythonApplication rec {
   };
 
   postFixup = ''
-    # ls -l $out/lib/python3.12/site-packages/nginx_ldap_auth/app/
-    # exit 1
     cp -r nginx_ldap_auth/app/static $out/lib/python3.12/site-packages/nginx_ldap_auth/app/
     cp -r nginx_ldap_auth/app/templates $out/lib/python3.12/site-packages/nginx_ldap_auth/app/
   '';
