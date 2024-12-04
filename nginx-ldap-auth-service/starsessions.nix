@@ -27,7 +27,7 @@ python3.pkgs.buildPythonApplication rec {
     description = "Advanced sessions for Starlette and FastAPI frameworks";
     homepage = "https://pypi.org/project/starsessions/";
     license = licenses.mit;
-    maintainers = with maintainers; [ ];
+    maintainers = [ ];
     mainProgram = "starsessions";
   };
 }

@@ -52,7 +52,7 @@ python3.pkgs.buildPythonApplication rec {
     description = "Structured Logging for Python";
     homepage = "https://pypi.org/project/structlog/";
     license = licenses.mit;
-    maintainers = with maintainers; [ ];
+    maintainers = [ ];
     mainProgram = "structlog";
   };
 }

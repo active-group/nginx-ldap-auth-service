@@ -23,7 +23,7 @@ python3.pkgs.buildPythonApplication rec {
     description = "An asyncio-based client for sending metrics to StatsD with support of DogStatsD extension";
     homepage = "https://pypi.org/project/aiodogstatsd/";
     license = licenses.mit;
-    maintainers = with maintainers; [ ];
+    maintainers = [ ];
     mainProgram = "aiodogstatsd";
   };
 }

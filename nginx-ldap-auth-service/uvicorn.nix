@@ -36,7 +36,7 @@ python3.pkgs.buildPythonApplication rec {
     description = "The lightning-fast ASGI server";
     homepage = "https://pypi.org/project/uvicorn/0.21.1/";
     license = licenses.bsd3;
-    maintainers = with maintainers; [ ];
+    maintainers = [ ];
     mainProgram = "uvicorn";
   };
 }

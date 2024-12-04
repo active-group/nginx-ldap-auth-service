@@ -46,7 +46,7 @@ python3.pkgs.buildPythonApplication rec {
     description = "A FastAPI app that authenticates users via LDAP and sets a cookie for nginx";
     homepage = "https://pypi.org/project/nginx-ldap-auth-service/";
     license = licenses.mit;
-    maintainers = with maintainers; [ ];
+    maintainers = [ ];
     mainProgram = "nginx-ldap-auth-service";
   };
 
