@@ -24,8 +24,8 @@ python3.pkgs.buildPythonApplication rec {
   ];
 
   propagatedBuildInputs = with python3.pkgs; [
-    (import ./aiodogstatsd { inherit lib python3; })
-    (import ./bonsai { inherit lib python3 pkgs; })
+    (import ./aiodogstatsd.nix { inherit lib python3; })
+    (import ./bonsai.nix { inherit lib python3 pkgs; })
     click
     fastapi
     jinja2
@@ -34,10 +34,10 @@ python3.pkgs.buildPythonApplication rec {
     python-dotenv
     python-multipart
     sentry-sdk
-    (import ./starsessions { inherit lib python3; })
-    (import ./structlog { inherit lib python3; })
+    (import ./starsessions.nix { inherit lib python3; })
+    (import ./structlog.nix { inherit lib python3; })
     tabulate
-    (import ./uvicorn { inherit lib python3; })
+    (import ./uvicorn.nix { inherit lib python3; })
     watchfiles
     redis
   ];
