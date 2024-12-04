@@ -27,7 +27,11 @@
 
       in
       {
-        packages.nginx-ldap-auth-service = import ./nginx-ldap-auth-service { inherit pkgs; };
+        packages = {
+          nginx-ldap-auth-service = import ./nginx-ldap-auth-service { inherit pkgs; };
+          default = self.packages.${system}.nginx-ldap-auth-service;
+        };
+
       }
     );
 }
